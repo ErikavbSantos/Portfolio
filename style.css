@@ -1,7 +1,12 @@
 :root {
-    --blue: #AFDDF5;
-    --pink: #F6CCE0;
-    --lilac: #c4a4ff;
+    --blue: #81d3ee;
+    --pink: #e963e7;
+    --warmPink: #e963a6;
+    --lilac: #c896ee;
+    --purple: #aa5ce6;
+    --salmon: #ffc499;
+    --offWhite: #fff5ee; /* the diference is basically unnoticeable on-screen, but it's far more confortable to look at "offWhite" colored text against the black background rather than the stark white */
+    --darkGray: #0f0f0f; /* the diference is also basically unnoticeable on-screen, but again I find it far more confortable to look at "darkGray" colored text against the white background rather than the stark black  */
 }
 
 :root {
@@ -12,6 +17,9 @@ h1,h2,h3,h4,h5,h6,p {
     pointer-events: none;
 }
 
+::selection {
+    background-color: #c896ee;
+}
 .all {
     margin: 0;
     padding: 0;
@@ -21,7 +29,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: white;
-    color: black;
+    color: var(--darkGray);
     font-size: 25px;
     transition: 0.5s;
     font-family: 'Raleway';
@@ -29,15 +37,20 @@ body {
 
 /* DARK MODE */
 .dark-mode {
-    background-color: black;
-    color: white;
+    background-color: 000;
+    color: var(--offWhite);
+
+    ::selection {
+        color: #000;
+        background-color: #c896ee;
+    }
 
     .slider:before {
-        background-color: black;
+        background-color: 000;
     }
 
     .topnav {
-        border-color: #000000;
+        border-color: #000;
     }
 
     .topnav a:hover {
@@ -46,12 +59,8 @@ body {
 
     .scroll_btn {
         transition: 0.5s;
-        color: black;
-    }
-
-    .main_logo p {
-        color: black;
-    }
+        color: 000;
+    }    
 }
 
 /* DIV WITH THE SCROLL UP AND LIGHT/DARK MODE BUTTONS*/
@@ -68,7 +77,7 @@ body {
 
 /* SCROLL UP BUTTON*/
 .scroll_btn {
-    background-image: linear-gradient(to right, var(--lilac,50%), var(--pink));
+    background-image: linear-gradient(to right, var(--salmon), var(--pink));
     color: white;
     padding: 6px 8px;
     margin-bottom: 8px;
@@ -101,7 +110,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(to left, var(--pink), var(--lilac));
+    background: linear-gradient(to right, var(--salmon,), var(--pink));
     -webkit-transition: .4s;
     transition: .4s;
 }
@@ -119,7 +128,7 @@ body {
 }
   
 input:checked + .slider {
-    background: linear-gradient(to left, var(--pink), var(--lilac));
+    background: linear-gradient(to right, var(--salmon,), var(--pink));
 }
   
 input:checked + .slider:before {
@@ -138,9 +147,17 @@ input:checked + .slider:before {
 
 /* HEADER */
 .header {
-    background-image: url(assets/holo-background.png);
+    background-color: #ffc499;
+    background-image:
+    radial-gradient(at 62% 60%, hsla(301,82%,60%,1) 0px, transparent 50%),
+    radial-gradient(at 47% 80%, hsla(186,62%,65%,1) 0px, transparent 50%),
+    radial-gradient(at 20% 7%, hsla(195,76%,72%,1) 0px, transparent 50%),
+    radial-gradient(at 10% 37%, hsla(274,73%,63%,1) 0px, transparent 50%),
+    radial-gradient(at 56% 14%, hsla(235,96%,73%,1) 0px, transparent 50%),
+    radial-gradient(at 46% 70%, hsla(274,72%,76%,1) 0px, transparent 50%),
+    radial-gradient(at 75% 36%, hsla(273,61%,75%,1) 0px, transparent 50%);
     height: 600px;
-    margin: 0 2%;
+    margin: 0 1%;
 }
 
 /* NAVBAR */
@@ -153,7 +170,7 @@ input:checked + .slider:before {
 .topnav a {
     float: left;
     display: block;
-    color: #000000;
+    color: #000;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -163,13 +180,20 @@ input:checked + .slider:before {
   
 .topnav a:hover {
     background-color: rgba(255, 255, 255, 0.300);
-    color: black;
+    color: 000;
 }
   
-.topnav a.logo {
+.topnav a.nonactive {
+    pointer-events: none;
+}
+
+#right_side {
+    float: right;
+}
+
+.navlogo {
     width: 23px;
     height: 25px;
-    pointer-events: none;
 }
   
 .topnav .icon {
@@ -186,6 +210,7 @@ input:checked + .slider:before {
 
 .main_logo p {
     font-size: 25px;
+    color: #000;
 }
 
 .main_logo_img {
@@ -197,6 +222,192 @@ input:checked + .slider:before {
 .main_logo_img:hover {
     transform: scale(1.2);
 }
+
+
+
+/* ABOUT ME SECTION */
+.about_me {
+    display: flex;
+    padding: 100px 300px 100px 250px;
+}
+
+.about_me h1{
+    text-align: center;
+    padding: 50px 50px 50px 0px;
+    margin: 0;
+    font-family: 'Becasime Antique';
+    font-size: 80px;
+    border-right: 4px solid;
+}
+
+.about_me p {
+    font-size: 25px;
+    margin: 0;
+    padding: 0px 0px 0px 50px;
+}
+
+/* SERVICE SECTION */
+.services {
+    padding: 0;
+    margin: 0 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* FORMATING OF ALL TITTLES OF THE MAIN DIVS */
+.div_tittle {
+    width: 99%;
+    text-align: center;
+    padding: 20px 0px;
+    margin-bottom: 50px;
+    font-family: 'Becasime Antique';
+    font-size: 45px;
+    border-bottom: 2px solid;
+}
+
+.div_cards {
+    display: flex;
+    margin: 0 8%;
+    justify-content: space-between;
+}
+
+.service_card {
+    width: 46%;
+}
+
+.card_title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.card_title img {
+    width: 80px;
+    height: fit-content;
+}
+
+.card_title h1 {
+    font-size: 30px;
+    margin: 0 20px;
+    background-color: #ffc499;
+    background:
+    linear-gradient(to right, var(--salmon), var(--purple), var(--lilac), var(--pink), var(--blue), var(--blue));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.card_info h2 {
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.card_info p {
+    font-size: 20px;
+    margin: 0;
+}
+
+
+
+.process_title {
+    width: 88%;
+    text-align: center;
+    padding: 20px 0px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-family: 'Becasime Antique';
+    font-size: 35px;
+    border-bottom: 2px solid;
+}
+
+.process_explanation {
+    font-size: 25px;
+    font-weight: normal;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+.service_process {
+    display: flex;
+    justify-content:space-between;
+    width: 84%;
+}
+
+.process_steps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 200px;
+}
+
+.step_number_1 {
+    border: 2px solid var(--blue);
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 6px 6px 4px 6px;
+    margin: 0px 0px 20px 0px;
+    border-radius: 30px;
+}
+
+.step_number_2 {
+    border: 2px solid var(--purple);
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 6px 6px 4px 6px;
+    margin: 0px 0px 20px 0px;
+    border-radius: 30px;
+}
+
+.step_number_3 {
+    border: 2px solid var(--warmPink);
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 6px 6px 4px 6px;
+    margin: 0px 0px 20px 0px;
+    border-radius: 30px;
+}
+
+.step_number_4 {
+    border: 2px solid var(--purple);
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 6px 6px 4px 6px;
+    margin: 0px 0px 20px 0px;
+    border-radius: 30px;
+}
+
+.step_number_5 {
+    border: 2px solid var(--blue);
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 6px 6px 4px 6px;
+    margin: 0px 0px 20px 0px;
+    border-radius: 30px;
+}
+
+.step_name {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0px 0px 10px 0px;
+}
+
+.step_text {
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+/************************************************************************************************************************/
+/************************************************************************************************************************/
+/************************************************************************************************************************/
+/************************************************************************************************************************/
+/************************************************************************************************************************/
+/************************************************************************************************************************/
+/************************************************************************************************************************/
 
 
 @media screen and (max-width: 600px) {
@@ -254,24 +465,3 @@ input:checked + .slider:before {
         font-size: 16px;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
