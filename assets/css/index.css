@@ -1,14 +1,12 @@
 /* INTRO DIV WITH MY NAME */
 .intro_card {
-    background-color:hsla(336,100%,88%,1);
+    background-color:#c299ff;
     background-image:
-    radial-gradient(at 44% 50%, hsla(336,100%,88%,0.8) 0px, transparent 50%),
-    radial-gradient(at 52% 1%, hsla(339,100%,75%,1) 0px, transparent 50%),
-    radial-gradient(at 81% 43%, hsla(336,100%,88%,1) 0px, transparent 50%),
-    radial-gradient(at 0% 100%, hsla(339,100%,75%,1) 0px, transparent 50%),
-    radial-gradient(at 95% 56%, hsla(339,100%,75%,1) 0px, transparent 50%),
-    radial-gradient(at 0% 0%, hsla(162,87%,42%,0.87) 0px, transparent 50%),
-    radial-gradient(at 100% 100%, hsla(162,87%,42%,0.87) 0px, transparent 50%);
+    radial-gradient(at 0% 0%, #d4116f 0px, transparent 50%),
+    radial-gradient(at 19% 29%, hsla(331,85%,45%,1) 0px, transparent 50%),
+    radial-gradient(at 23% 71%, hsla(280,77%,57%,1) 0px, transparent 50%),
+    radial-gradient(at 74% 0%, hsla(203,100%,42%,1) 0px, transparent 50%),
+    radial-gradient(at 92% 93%, hsla(187,100%,61%,1) 0px, transparent 50%);
     height: 600px;
     color: black;
     font-size: 30px;
@@ -105,7 +103,7 @@
     left: 0;
     height: 2px;
     width: 100%;
-    background: linear-gradient(to right, var(--pink), var(--pink), var(--lightPink), var(--green));
+    background: linear-gradient(to right, var(--pink), var(--purple),var(--blue), var(--green));
 }
 
 .div_video {
