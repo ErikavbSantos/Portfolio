@@ -1,0 +1,15 @@
+:root {
+    --pink: #FF83AD;
+    --lightPink: #FFC2DA;
+    --green: #0ECDAB;
+    --background: #1E1E1E;
+    --darkGray: #0f0f0f;
+}
+
+:root {
+    scroll-behavior: smooth;
+  }
+
+::selection {
+    background-color: var(--pink);
+}

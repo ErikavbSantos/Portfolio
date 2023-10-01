@@ -1,0 +1,62 @@
+header {
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    box-sizing: border-box;
+    height: 60px;
+    padding: 0 30;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background: var(--background);
+    border-bottom: 2px solid white;
+}
+
+header a {
+    padding: 18 20;
+    font-size: 20px;
+    transition: 0.5s ease-in-out;
+}
+
+header p {
+    margin: 0;
+    font-size: 20px;
+    transition: 0.5s ease-in-out;
+}
+
+header a:hover {
+    background: rgba(255, 255, 255, 0.150);
+}
+
+.active {
+    background: rgba(255, 255, 255, 0.060);
+}
+
+.disabled {
+    color: gray;
+    pointer-events: none;
+}
+/* POP-UP */
+.email_pop_up {
+    position: relative;
+}
+
+.email_pop_up .pop_up_content {
+    display: none;
+    position: absolute;
+    top: 34px;
+    left: 20%;
+    right: -12%;
+    background: var(--pink);
+    padding: .6em;
+    min-width: 10rem;
+    pointer-events: none;
+}
+
+.pop_up_content p {
+    font-size: 16px;
+}
+.email_pop_up:hover .pop_up_content {
+    display: block;
+}

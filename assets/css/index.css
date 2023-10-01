@@ -1,0 +1,121 @@
+/* INTRO DIV WITH MY NAME */
+.intro_card {
+    background-color:hsla(336,100%,88%,1);
+    background-image:
+    radial-gradient(at 44% 50%, hsla(336,100%,88%,0.8) 0px, transparent 50%),
+    radial-gradient(at 52% 1%, hsla(339,100%,75%,1) 0px, transparent 50%),
+    radial-gradient(at 81% 43%, hsla(336,100%,88%,1) 0px, transparent 50%),
+    radial-gradient(at 0% 100%, hsla(339,100%,75%,1) 0px, transparent 50%),
+    radial-gradient(at 95% 56%, hsla(339,100%,75%,1) 0px, transparent 50%),
+    radial-gradient(at 0% 0%, hsla(162,87%,42%,0.87) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, hsla(162,87%,42%,0.87) 0px, transparent 50%);
+    height: 600px;
+    color: black;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 60px;
+}
+
+.my_name {
+    display: flex;
+}
+
+.my_name p {
+    font-size: 150px;
+    padding: 0 25;
+    margin: 0;
+    color: white;
+    transition: 0.5s ease-in-out;
+}
+
+.mirrored {
+    -moz-transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1);
+    -o-transform: scale(-1, 1);
+    -ms-transform: scale(-1, 1);
+    transform: scale(-1, 1);
+}
+
+.my_name .normal {
+    text-shadow: -10px -8px black;
+}
+
+.my_name .mirrored {
+    text-shadow: 10px -8px black;
+}
+
+/* Style for all the tittles of the main divs*/
+.div_titulo {
+    font-size: 35px;
+    font-weight: 600;
+    margin: 0;
+    text-shadow: -6px -6px black;
+}
+
+/* INTRO SECTION */
+.intro_text {
+    display: flex;
+    padding: 150px 10% 0 10%;
+}
+
+.intro_text h1{
+    text-align: center;
+    padding: 50px 50px 50px 0px;
+    margin: 0;
+    font-size: 80px;
+    border-right: 4px solid white;
+    text-shadow: -6px -6px var(--pink), -10px -10px var(--green);
+}
+
+.intro_text p {
+    font-size: 25px;
+    margin: 0;
+    padding: 0px 0px 0px 50px;
+}
+
+/* ABOUT ME SECTION */
+.about_me {
+    align-items: center;
+    text-align: center;
+    margin: 10%;
+}
+
+.topics {
+    display: flex;
+    flex-direction: column;
+}
+
+.topics p {
+    font-size: 22px;
+}
+
+.topics a {
+    position: relative;
+    padding-bottom: 2px;
+    text-decoration: none;
+}
+
+.topics a::before {
+    content: "";
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background: linear-gradient(to right, var(--pink), var(--pink), var(--lightPink), var(--green));
+}
+
+.div_video {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    margin: 10%;
+}
+
+video {
+    width: 100%;
+    height: auto;
+}

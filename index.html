@@ -1,137 +1,94 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="assets/logo_E_moon_tab.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="shortcut icon" href="/assets/imgs/ESfavicon.svg" type="image/x-icon">
 
-    <!-- Fontes -->
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- Raleway --><link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
-    <!-- Bacasime Antique --><link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
-
-    <title>Erika Santos - Portifolio</title>
+    <!-- Inter --> <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Raleyway --> <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    
+    <title>Erika Santos - Portfolio</title>
 </head>
-
 <body>
 
-    <div class="side_btns">
-        <a class="scroll_btn" href="#all" title="Scroll back to the top">▲</a>
-        <label class="switch_btn">
-            <input type="checkbox">
-            <span onclick="lightDarkFunction()" class="slider round" title="Switch from light to dark mode"></span>
-        </label>
+    <header>
+        <a class="active" href="index.html">Home</a>
+        <a class="disabled" href="projetos.html">Projetos</a>
+        <a class="disabled" href="#sobre_mim">Sobre Mim</a>
+        <a class="disabled" href="#contato">Contato</a>
+        <div class="email_pop_up">
+            <a href="mailto:erikavbscontato@gmail.com" target="_blank">erikavbscontato@gmail.com</a>
+            <div class="pop_up_content">
+              <p>Mande um e-mail agora mesmo ★</p>
+            </div> 
+        </div>
+    </header>
+
+    <div class="intro_card">
+        <div class="my_name">
+            <p class="mirrored">E</p>
+            <p class="mirrored">R</p>
+            <p class="normal">I</p>
+            <p class="normal">K</p>
+            <P class="normal">A</P>
+        </div>
+        <p>Web Designer & Web Developer</p>
     </div>
 
-    <div class="all" id="all">
-        <div class="header">
-            <div class="topnav" id="myTopnav">
-                <a href="" class="nonactive"><img class="navlogo" src="assets/logo_E_moon_black.png"></a>
-                <a href="#about_me">Sobre Mim</a>
-                <a href="#services">Serviços</a>
-                <a href="#contact">Contato</a>
-                <a href="" class="nonactive" id="right_side">erikavbscontato@gmail.com</a>
-                  <i class="fa fa-bars"></i>
-                </a>
-            </div>
-            <div class="main_logo">
-                <p>Web Developer</p>
-                <img class="main_logo_img" src="assets/Group 2.png" alt="main logo">
-                <p>Web Designer</p>
-            </div>
-        </div>
-
-        <!-- SEÇÃO SOBRE MIM -->
-        <div class="about_me" id="about_me">
-            <div class="about_me_text">
-                <h1>Olá!</h1>
-                <p>Eu me chamo Erika, sou designer e desenvolvedora voltada para projetos web.<br><br>Atualmente estou cursando o 4° período da graduação em Análise e Desenvolvimento de Sistemas na Faculdade Senac Pernambuco através do programa Embarque Digital. </p>
-            </div>
-        </div>
-
-        <!-- SEÇÃO SERVIÇOS -->
-        <div class="services" id="services">
-            <h1 class="service_tittle">SERVIÇOS</h1>
-            <div class="div_cards">
-                <div class="service_card">
-                    <div class="card_title">
-                        <img class="card_img" src="assets/wireframing.png">
-                        <h1>WEBSITE<br>DESIGN</h1>
-                    </div>
-                    <div class="card_info">           
-                        <h2>Wireframing • UI & UX Design • Prototyping • Desenvolvimento de Websites</h2>
-                        <p>Se você está planejando um novo site para o lançamento da sua marca e/ou produtos ou precisa atualizar seu site atual, tenho experiência em trabalhar com criação de sites personalizados e webapps.</p>
-                    </div>
-                </div>
-
-                <div class="service_card">
-                    <div class="card_title">
-                        <img class="card_img" src="assets/branding.png">
-                        <h1>BRANDING E<br>IDENTIDADE VISUAL</h1>
-                    </div>
-            
-                    <div class="card_info">           
-                        <h2>Logo • Guia de Estilo • Packaging • Design Research</h2>
-                        <p>Construir uma marca visualmente sempre começa com um logotipo. Juntos podemos criar um conceito atraente e que represente o valor e o propósito da sua marca, desde o design do logotipo até um sistema de identidade completo, que envolve estilos tipográficos, paletas de cores, elementos da marca, etc.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- SUBSEÇÃO PROCESSO -->
-            <div class="process">
-                <h1 class="process_title">PROCESSO</h1>
-                <h2 class="process_explanation">Cada projeto é unico e tem suas necessidades específicas, mas essas são algumas<br>etapas comuns que eu sigo em meus projetos como boas práticas:</h2>
-                <div class="service_process">
-                    <div class="process_steps">
-                        <p class="step_number_1">01</p>
-                        <p class="step_name">PLANEJAMENTO</p>
-                        <p class="step_text">Nesta fase inicial, é importante definir o objetivo do website, identificar o público-alvo e entender as metas e objetivos do cliente.</p>
-                    </div>
-                    <div class="process_steps">
-                        <p class="step_number_2">02</p>
-                        <p class="step_name">DESIGN</p>
-                        <p class="step_text"> Em seguida, cria-se uma estrutura visual para o website, que envolve a criação de wireframes e do design gráfico das páginas.</p>
-                    </div>
-                    <div class="process_steps">
-                        <p class="step_number_3">03</p>
-                        <p class="step_name">PRODUÇÃO</p>
-                        <p class="step_text">É nesta fase que começa a transformação do design em código, além da criação do conteúdo e a implementação das funcionalidades.</p>
-                    </div>
-                    <div class="process_steps">
-                        <p class="step_number_4">04</p>
-                        <p class="step_name">REVIEW</p>
-                        <p class="step_text">Uma vez que o website tenha sido desenvolvido, é importante se reunir com o cliente para revisar o website, obter feedback e fazer ajustes finais.</p>
-                    </div>
-                    <div class="process_steps">
-                        <p class="step_number_5">05</p>
-                        <p class="step_name">LANÇAMENTO</p>
-                        <p class="step_text">Agora que o website está pronto para ser lançado, está na hora de configurar a hospedagem, fazer o registro do domínio, transferir os arquivos para o servidor, etc.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- FOOTER -->
-        <div class="footer">
-            <p class="redes">Minhas redes:</p>
-            <div class="footer_links">
-                <a href="https://github.com/ErikavbSantos" target="_blank"><img class="footer_link_img" src="assets/github.png"></a>
-                <a href="https://www.linkedin.com/in/erikavbsantos" target="_blank"><img class="footer_link_img" src="assets/linkedin.png"></a>
-                <a href="https://www.instagram.com/_erikavbs/" target="_blank"><img class="footer_link_img" src="assets/instagram.png"></a>
-                <a href="mailto:erikavbscontato@gmail.com" target="_blank"><img class="footer_link_img" src="assets/gmail.png"></a>
-            </div>
-            <img class="footer_logo" src="assets/logo_E_moon_footer.png" width="34" height="38">
-            <div class="copyright_message">
-                <p class="copyright">✦ ‎ ‎ ‎ Erika Santos © 2023</p>
-                <p class="dontdisplayonmobile">‎ All Rights Reserved</p>
-                <p class="copyright"> ‎ ‎ ‎ ✦</p>
-                <!-- invisible characters added for the space between the stars at the ends and the text in the middle because for some reason normal spaces were simply not working???anyways -->
-            </div>
+    <!-- SEÇÃO SOBRE MIM -->
+    <div class="div_intro" id="div_intro">
+        <div class="intro_text">
+            <h1>Hello!</h1>
+            <p>I am Erika Santos, a 22 y/o undergraduate and freelance
+                Designer & Web Developer based in Recife, Brazil.
+                <br><br>
+                I'm currently on my fourth semester on
+                Systems Development and Analysis at Senac Pernambuco College.</p>
         </div>
     </div>
 
+    <div class="about_me">
+    <h1 class="div_titulo">A bit more about me...</h1>
+    <div class="topics">
+        <p>I prefer to work on <a>Front End</a>,
+        from the design and wire-framing of the pages to the actual
+        coding with <a>HTML CSS and JS</a>, but I
+        have also worked with and enjoyed doing
+        <a>Data Analysis</a>.
+        <br>
+        <br>
+        <br>
+        <br>
+        My immediate family consists of only me and my parents as I
+        do not have any siblings, but I have a very large extended
+        family which more than makes up for it, with three aunts and
+        lots of cousins who all live close by and come to visit often.
+        <br>
+        <br>
+        <br>
+        <br>
+        I've had <a>lovebirds, rabbits and doves</a>
+        as pets before, but at the moment the only pet on the house is
+        my father's Yellow Bellied Seedeater that I jokingly and somewhat
+        affectionately call my “little brother”.
+        <br>
+        <br>
+        <br>
+        <br>
+        Programming aside, I like to think I'm good at designing.
+        </p>
+    </div>
+    </div>
 
-    <script src="app.js"></script>
-
+    <div class="div_video">
+        <video controls preload="auto" poster="/assets/introthumbnail.png">
+            <source src="" type="video/mp4">
+            Your browser does not suport the video tag.
+        </video>
+    </div>
 </body>
 </html>
