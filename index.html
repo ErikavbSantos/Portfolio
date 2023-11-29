@@ -59,23 +59,23 @@
         <h1>MEUS PROJETOS</h1>
         <div class="cards">                                             
             <div class="projeto-card">
-                <img src="/assets/imgs/projeto-img-placeholder.png" alt="card do projeto">
+                <a class="img-do-projeto" href=""><img src="/assets/imgs/pagina-perfil-dispor.png" alt="card do projeto"></a>
                 <h2>Lorem ipsum</h2>
             </div>
             <div class="projeto-card">
-                <img src="/assets/imgs/projeto-img-placeholder.png" alt="card do projeto">
+                <a class="img-do-projeto" href=""><img src="/assets/imgs/pagina-perfil-dispor.png" alt="card do projeto"></a>
                 <h2>Lorem ipsum</h2>
             </div>
             <div class="projeto-card">
-                <img src="/assets/imgs/projeto-img-placeholder.png" alt="card do projeto">
+                <a class="img-do-projeto" href=""><img src="/assets/imgs/pagina-perfil-dispor.png" alt="card do projeto"></a>
                 <h2>Lorem ipsum</h2>
             </div>
             <div class="projeto-card">
-                <img src="/assets/imgs/projeto-img-placeholder.png" alt="card do projeto">
+                <a class="img-do-projeto" href=""><img src="/assets/imgs/pagina-perfil-dispor.png" alt="card do projeto"></a>
                 <h2>Lorem ipsum</h2>
             </div>
             <div class="projeto-card">
-                <img src="/assets/imgs/projeto-img-placeholder.png" alt="card do projeto">
+                <a class="img-do-projeto" href=""><img src="/assets/imgs/pagina-perfil-dispor.png" alt="card do projeto"></a>
                 <h2>Lorem ipsum</h2>
             </div>
         </div>
@@ -84,21 +84,37 @@
 
     <div id="contato">
         <h1>ENTRE EM CONTATO</h1>
-        <div class="info-contatos">
-            <div class="contato-link">
-                <img src="/assets/imgs/github-contact.svg" alt="github logo">
-                <a href="">ErikavbSantos</a>
+        <div class="flex-div">
+            <div class="info-contatos">
+                <img class="contato-backgroung" src="/assets/imgs/contact-side-frame.svg" alt="">
+                <div class="contato-link">
+                    <img src="/assets/imgs/github-contact.svg" alt="github logo">
+                    <a href="https://github.com/ErikavbSantos" target="_blank">ErikavbSantos</a>
+                </div>
+                <div class="contato-link">
+                    <img src="/assets/imgs/gmail-contact.svg" alt="gmail logo">
+                    <a href="mailto:erikavbsantoscontato@gmail.com" target="_blank">erikavbsantoscontato@gmail.com</a>
+                </div>
+                <div class="contato-link">
+                    <img src="/assets/imgs/linkedin-contact.svg" alt="linkedin logo">
+                    <a href="https://www.linkedin.com/in/erikavbsantos" target="_blank">/in/erikavbsantos</a>
+                </div>
             </div>
-            <div class="contato-link">
-                <img src="/assets/imgs/gmail-contact.svg" alt="gmail logo">
-                <a href="">erikavbsantoscontato@gmail.com</a>
-            </div>
-            <div class="contato-link">
-                <img src="/assets/imgs/linkedin-contact.svg" alt="linkedin logo">
-                <a href="">/in/erikavbsantos</a>
-            </div>
+            <section>
+                <form action="https://api.staticforms.xyz/submit" method="post">
+                    <label>Nome</label>
+                    <input type="text" name="name" placeholder="Digite seu nome" autocomplete="off" required>
+                    <label>Email</label>
+                    <input type="email" name="email" placeholder="Digite seu email" autocomplete="off" required>
+                    <label>Assunto</label>
+                    <textarea name="message" cols="30" rows="10" placeholder="Deixe uma mensagem" required></textarea>
+                    <button class="btn-black" type="submit">Enviar</button>
+        
+                    <input type="hidden" name="accessKey" value="">
+                    <input type="hidden" name="redirectTo" value="">
+                </form>
+            </section>
         </div>
-        <form action=""></form>
     </div>
 
 </body>

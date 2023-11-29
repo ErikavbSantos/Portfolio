@@ -24,11 +24,6 @@ a {
 }
 .btn-black:hover {
     background-color: black;
-    color: var(--purple);
+    color: var(--blue);
     cursor: pointer;
-}
-
-@keyframes colorChange {
-    from {color: var(--blue);} 
-    to {color: var(--purple);}
 }
