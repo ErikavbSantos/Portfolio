@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="shortcut icon" href="/assets/imgs/ESfavicon.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="/assets/imgs/e-favicon.svg" type="image/x-icon">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,65 +17,88 @@
 <body>
 
     <header>
-        <a class="active" href="index.html">Home</a>
-        <a class="disabled" href="projetos.html">Projetos</a>
-        <a class="disabled" href="#sobre_mim">Sobre Mim</a>
-        <a class="disabled" href="#contato">Contato</a>
-        <div class="email_pop_up">
-            <a href="mailto:erikavbscontato@gmail.com" target="_blank">erikavbscontato@gmail.com</a>
-            <div class="pop_up_content">
-              <p>Mande um e-mail agora mesmo ★</p>
-            </div> 
+        <a href="index.html">
+            <img src="/assets/imgs/erika-santos-header.svg" alt="Erika Santos">
+        </a>
+        <div class="header-links">
+            <a class="active" href="index.html">HOME</a>
+            <a href="#sobre-mim">SOBRE MIM</a>
+            <a href="#projetos">PROJETOS</a>
+            <a href="#contato">CONTATO</a>
         </div>
     </header>
 
-    <div class="intro_card">
-        <div class="my_name">
-            <p class="mirrored">E</p>
-            <p class="mirrored">R</p>
-            <p class="normal">I</p>
-            <p class="normal">K</p>
-            <P class="normal">A</P>
+    <div id="sobre-mim">
+        <div class="logo">
+            <img class="rotating-star" src="/assets/imgs/star-decor.svg" alt="rotating star">
+            <svg class="main-logo" width="328" height="500" viewBox="0 0 328 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="327.458" height="500" rx="163.729" fill="black"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M68.6367 275.276C88.1567 394.567 237.508 370.385 241.846 294.473C220.157 327.006 181.42 331.668 157.562 316.486C135.873 296.966 144.548 270.939 190.096 260.094C239.981 251.418 255.163 199.364 213.954 175.506C161.9 140.804 62.1297 160.324 68.6367 275.276ZM120.69 197.195C103.339 234.067 114.184 283.952 138.042 305.641C133.704 281.783 135.873 266.601 181.42 229.729C218.292 190.689 151.055 142.973 120.69 197.195Z" fill="white"/>
+<path class="sparkle" d="M229.327 265.95C239.353 263.422 242.791 260.129 244.663 250.613C246.807 260.288 249.784 264.012 260 265.95C249.94 268.892 246.765 272.386 244.663 281.286C241.918 272.427 239.568 268.176 229.327 265.95Z"/>
+</svg>
+            <h1>PORTFOLIO</h1>
         </div>
-        <p>Web Designer & Web Developer</p>
+        <div class="intro">
+            <p>Olá, eu me chamo Erika, tenho 22 anos e sou uma pessoa comunicativa, uma leitora ávida e apaixonada por jogos e design.</p>
+            <p>Atualmente estou cursando o 4° período de uma graduação em Análise e Desenvolvimento de Sistemas na Faculdade Senac PE e planejo construir para mim uma carreira como Designer e Web Developer.</p>
+            <div class="habilidades-cv">
+                <div class="habilities-icons">
+                    <h1>HABILIDADES</h1>
+                    <img src="/assets/imgs/html-logo.svg" alt="html logo">
+                    <img src="/assets/imgs/css-logo.svg" alt="css logo">
+                    <img src="/assets/imgs/js-logo.svg" alt="js logo">
+                    <img src="/assets/imgs/figma-logo.svg" alt="figma logo">
+                    <img src="/assets/imgs/bootstrap-logo.svg" alt="bootstrap logo">
+                </div>
+                <button class="btn-black habilidadesbtn">VEJA MEU CV</button>
+            </div>
+        </div>
     </div>
 
-    <!-- SEÇÃO SOBRE MIM -->
-    <div class="div_intro" id="div_intro">
-        <div class="intro_text">
-            <h1>Hello!</h1>
-            <p>I am Erika Santos, a 22 y/o undergraduate and freelance
-                Designer & Web Developer based in Recife, Brazil.
-                <br><br>
-                I'm currently on my fourth semester on
-                Systems Development and Analysis at Senac Pernambuco College.</p>
+    <div id="projetos">
+        <h1>MEUS PROJETOS</h1>
+        <div class="cards">                                             
+            <div class="projeto-card">
+                <img src="/assets/imgs/projeto-img-placeholder.png" alt="card do projeto">
+                <h2>Lorem ipsum</h2>
+            </div>
+            <div class="projeto-card">
+                <img src="/assets/imgs/projeto-img-placeholder.png" alt="card do projeto">
+                <h2>Lorem ipsum</h2>
+            </div>
+            <div class="projeto-card">
+                <img src="/assets/imgs/projeto-img-placeholder.png" alt="card do projeto">
+                <h2>Lorem ipsum</h2>
+            </div>
+            <div class="projeto-card">
+                <img src="/assets/imgs/projeto-img-placeholder.png" alt="card do projeto">
+                <h2>Lorem ipsum</h2>
+            </div>
+            <div class="projeto-card">
+                <img src="/assets/imgs/projeto-img-placeholder.png" alt="card do projeto">
+                <h2>Lorem ipsum</h2>
+            </div>
         </div>
+        <button class="btn-black projetobtn">VEJA MAIS</button>
     </div>
 
-    <div class="about_me">
-        <h1 class="div_titulo">A bit more about me...</h1>
-        <div class="topics">
-            <p>I prefer to work on <a>Front End</a>,
-            from the design and wire-framing of the pages to the actual
-            coding with <a>HTML CSS and JS</a>, but I
-            have also worked with and enjoyed doing
-            <a>Data Analysis</a>.
-            <br><br><br><br>
-            My immediate family consists of only me and my parents as I
-            do not have any siblings, but I have a very large extended
-            family which more than makes up for it, with three aunts and
-            lots of cousins who all live close by and come to visit often.
-            <br><br><br><br>
-            I've had <a>lovebirds and rabbits</a>
-            as pets before, but at the moment the only pet on the house is
-            my father's Yellow Bellied Seedeater that I jokingly and somewhat
-            affectionately call my “little brother”.
-            <br><br><br><br>
-            Programming aside, I like to think I'm good at <a>designing and organization</a>.
-            And on less professional things, I'm <a>quite the baker and a very fast reader</a>
-            (when I have time to indulge, I can easily read a 500 pages book in a day).
-            </p>
+    <div id="contato">
+        <h1>ENTRE EM CONTATO</h1>
+        <div class="info-contatos">
+            <div class="contato-link">
+                <img src="/assets/imgs/github-contact.svg" alt="github logo">
+                <a href="">ErikavbSantos</a>
+            </div>
+            <div class="contato-link">
+                <img src="/assets/imgs/gmail-contact.svg" alt="gmail logo">
+                <a href="">erikavbsantoscontato@gmail.com</a>
+            </div>
+            <div class="contato-link">
+                <img src="/assets/imgs/linkedin-contact.svg" alt="linkedin logo">
+                <a href="">/in/erikavbsantos</a>
+            </div>
         </div>
+        <form action=""></form>
     </div>
 
 </body>

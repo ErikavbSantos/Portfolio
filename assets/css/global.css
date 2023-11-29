@@ -1,25 +1,34 @@
 body {
     margin: 0;
     padding: 0;
-    background: #1e1e1e;
-    color: white; /* text color */
-    font-family: Inter; /* font family */
+    font-family: Roboto, sans-serif;
     font-weight: normal;
 }
-
 a {
     color: white;
     text-decoration: none; /* to remove those pesky lines under the links */
 }
-
-/* to disable any link anytime */
-.disabled {
+.disabled { /* to disable any link anytime */
     pointer-events: none;
+    color: var(--purple);
+}
+.btn-black {
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    height: fit-content;
+    padding: 14px 24px;
+    transition: all 0.3s;
+}
+.btn-black:hover {
+    background-color: black;
+    color: var(--purple);
+    cursor: pointer;
 }
 
-.tbh {
-    font-size: 50px;
-    text-align: center;
-    color: white;
-    padding-top: 200px;
+@keyframes colorChange {
+    from {color: var(--blue);} 
+    to {color: var(--purple);}
 }

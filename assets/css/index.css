@@ -1,119 +1,125 @@
-/* INTRO DIV WITH MY NAME */
-.intro_card {
-    background-color:#c299ff;
-    background-image:
-    radial-gradient(at 0% 0%, #d4116f 0px, transparent 50%),
-    radial-gradient(at 19% 29%, hsla(331,85%,45%,1) 0px, transparent 50%),
-    radial-gradient(at 23% 71%, hsla(280,77%,57%,1) 0px, transparent 50%),
-    radial-gradient(at 74% 0%, hsla(203,100%,42%,1) 0px, transparent 50%),
-    radial-gradient(at 92% 93%, hsla(187,100%,61%,1) 0px, transparent 50%);
-    height: 600px;
+/* DIV SOBRE MIM */
+#sobre-mim {
+    background-color: var(--lightBlue);
     color: black;
     font-size: 30px;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
-    padding-top: 60px;
+    justify-content: space-around;
+    padding: 120px 60px 60px 60px;
 }
-
-.my_name {
-    display: flex;
-}
-
-.my_name p {
-    font-size: 150px;
-    padding: 0 25;
-    margin: 0;
-    color: white;
-    transition: 0.5s ease-in-out;
-}
-
-.mirrored {
-    -moz-transform: scale(-1, 1);
-    -webkit-transform: scale(-1, 1);
-    -o-transform: scale(-1, 1);
-    -ms-transform: scale(-1, 1);
-    transform: scale(-1, 1);
-}
-
-.my_name .normal {
-    text-shadow: -10px -8px black;
-}
-
-.my_name .mirrored {
-    text-shadow: 10px -8px black;
-}
-
-/* Style for all the tittles of the main divs*/
-.div_titulo {
-    font-size: 35px;
-    font-weight: 600;
-    margin: 0;
-    text-shadow: -6px -6px black;
-}
-
-/* INTRO SECTION */
-.intro_text {
-    display: flex;
-    padding: 150px 10% 0 10%;
-}
-
-.intro_text h1{
-    text-align: center;
-    padding: 50px 50px 50px 0px;
-    margin: 0;
-    font-size: 80px;
-    border-right: 4px solid white;
-    text-shadow: -6px -6px var(--pink), -10px -10px var(--green);
-}
-
-.intro_text p {
-    font-size: 25px;
-    margin: 0;
-    padding: 0px 0px 0px 50px;
-}
-
-/* ABOUT ME SECTION */
-.about_me {
-    align-items: center;
-    text-align: center;
-    margin: 10%;
-}
-
-.topics {
-    display: flex;
-    flex-direction: column;
-}
-
-.topics p {
-    font-size: 22px;
-}
-
-.topics a {
+.logo {
     position: relative;
-    padding-bottom: 2px;
-    text-decoration: none;
-}
-
-.topics a::before {
-    content: "";
-    position: absolute;
-    bottom: 2px;
-    left: 0;
-    height: 2px;
-    width: 100%;
-    background: linear-gradient(to right, var(--pink), var(--purple),var(--blue), var(--green));
-}
-
-.div_video {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    box-sizing: border-box;
-    margin: 10%;
+    padding-left: 80px;
 }
-
-video {
+.rotating-star {
+    position: absolute;
+    z-index: 1;
+    top: -30;
+    left: 26;
+    height: 150px;
+    width: auto;
+    -webkit-animation:spin 10s linear infinite;
+    -moz-animation:spin 10s linear infinite;
+    animation:spin 10s linear infinite;
+}
+@-moz-keyframes spin { 
+    100% { -moz-transform: rotate(360deg); } 
+}
+@-webkit-keyframes spin { 
+    100% { -webkit-transform: rotate(360deg); } 
+}
+@keyframes spin { 
+    100% { 
+        -webkit-transform: rotate(360deg); 
+        transform:rotate(360deg); 
+    } 
+}
+.main-logo {
+    height: 350px;
+    width: auto;
+    z-index: 1;
+}
+.sparkle {
+    animation: colors 1s infinite;
+    animation-direction: alternate;
+}
+@keyframes colors {
+    from {fill: var(--blue);} 
+    to {fill: var(--purple);}
+}
+.logo h1 {
+    font-size: 40px;
+}
+.intro {
+    width: 40rem;
+}
+.intro p {
+    font-size: 22px;
+    margin: 0;
+    padding-bottom: 20px;
+}
+.habilidades-cv {
+    display: flex;
+    justify-content: space-between;
+}
+.habilidadesbtn {
+    align-self: flex-end;
+}
+.habilities-icons h1 {
+    font-size: 22px;
+    margin: 0;
+    padding-bottom: 20px;
+}
+.habilities-icons img {
+    height: 40px;
+    width: auto;
+    padding-right: 16px;
+}
+/* DIV PROJETOS */
+#projetos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 10px;
+}
+#projetos h1 {
+    margin: 0;
+    padding-bottom: 60px;
+    text-align: center;
+}
+.cards {
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
-    height: auto;
+    box-sizing: border-box;
+    justify-content: space-around;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+.projeto-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: ease-in-out 0.1s;
+}
+.projeto-card:hover {
+    transform: scale(1.2);
+}
+.projeto-card h2 {
+    font-size: 22px;
+    padding-top: 20px;
+}
+.cards img {
+    height: 250px;
+    width: auto;
+    border-radius: 100px;
+}
+.projetobtn {
+    margin: 60px;
 }
