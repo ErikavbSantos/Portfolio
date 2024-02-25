@@ -9,7 +9,7 @@ header {
     text-align: center;
     align-items: center;
     justify-content: space-between;
-    background: var(--lightBlue);
+    background: var(--lilac);
 }
 header img {
     height: 24px;
@@ -23,12 +23,12 @@ header a {
     margin-left: 50px;
 }
 header a:hover {
-    color: var(--blue);
+    color: var(--yellow);
 }
 .active {
-    color: var(--blue);
+    color: var(--yellow);
 }
 .disabled {
-    color: gray;
+    color: rgb(82, 82, 82);
     pointer-events: none;
 }

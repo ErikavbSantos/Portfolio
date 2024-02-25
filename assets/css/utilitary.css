@@ -1,8 +1,9 @@
 :root {
-    --purple: #B090F5;
-    --lightPurple: #C7C8F5;
-    --blue: #91B5F5;
-    --lightBlue: #C3F1F3;
+    --lilac: #B090F5;
+    --purple: #482684;
+    --blue: #13B4BC;
+    --pink: #C9378C;
+    --yellow: #FEB742;
     --background: #1E1E1E;
 }
 
@@ -11,5 +12,5 @@
   }
 
 ::selection {
-    background-color: var(--purple);
+    background-color: var(--yellow);
 }

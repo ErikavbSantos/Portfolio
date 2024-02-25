@@ -1,13 +1,13 @@
 /* DIV SOBRE MIM ---------------------------------- */
 #sobre-mim {
-    background-color: var(--lightBlue);
+    background-color: var(--lilac);
     color: black;
     font-size: 30px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-    padding: 120px 60px 60px 60px;
+    padding: 140px 60px 70px 60px;
 }
 .logo {
     position: relative;
@@ -44,14 +44,6 @@
     width: auto;
     z-index: 1;
 }
-.sparkle {
-    animation: colors 0.9s infinite;
-    animation-direction: alternate;
-}
-@keyframes colors {
-    from {fill: var(--blue);} 
-    to {fill: white;}
-}
 .logo h1 {
     font-size: 40px;
 }
@@ -75,7 +67,7 @@
     margin: 0;
     padding-bottom: 20px;
 }
-.habilities-icons img {
+.habilities-icons svg {
     height: 40px;
     width: auto;
     padding-right: 16px;
@@ -103,33 +95,52 @@
     padding-right: 60px;
 }
 .projeto-card {
+    margin-bottom: 30px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    transition: ease-in-out 0.2s;
-}
-.projeto-card:hover {
-    transform: scale(1.2);
-}
-.projeto-card h2 {
-    font-size: 22px;
-}
-.cards a {
-    height: 290px;
-    width: auto;
-    border-radius: 100px;
+    height:fit-content;
+    border-radius: 8px;
     overflow: hidden;
-    transition: ease-in-out 0.2s;
 }
-.projeto-card:hover .img-do-projeto {
-    border-radius: 0;
+.projeto-card a {
+    font-weight: 600;
+    font-size: 18px;
+    margin: 6px;
 }
 .cards img {
-    width: 160;
-    height: auto;
+    width: auto;
+    height: 200;
+}
+.purple-border {
+    box-shadow: var(--purple) -2px 2px 0px 5px;
+    color: var(--purple);
+}
+.pink-border {
+    box-shadow: var(--pink) -3px 3px 0px 6px;
+    color: var(--pink);
+}
+.yellow-border {
+    box-shadow: var(--yellow) -3px 3px 0px 6px;
+    color: var(--yellow);
+}
+.blue-border {
+    box-shadow: var(--blue) -3px 3px 0px 6px;
+    color: var(--blue);
+}
+.purple-underline {
+    border-bottom: 1px solid var(--purple);
+}
+.pink-underline {
+    border-bottom: 1px solid var(--pink);
+}
+.yellow-underline {
+    border-bottom: 1px solid var(--yellow);
+}
+.blue-underline {
+    border-bottom: 1px solid var(--blue);
 }
 .projetobtn {
-    margin-top: 60px;
+    margin-top: 10px;
 }
 /* DIV CONTATO ----------------------------------*/
 #contato {
@@ -224,7 +235,16 @@ form button{
     padding: 15px;
     cursor: pointer;
     font-size: 16px;
+    align-self: center;
     background: transparent;
     border: 2px solid black;
     transition: all 1s;
 }
+
+
+
+@keyframes rotate-hue634 {
+    to {
+      filter: hue-rotate(1turn);
+    }
+  }

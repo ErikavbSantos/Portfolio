@@ -5,16 +5,20 @@ body {
     font-weight: normal;
 }
 a {
-    color: white;
     text-decoration: none; /* to remove those pesky lines under the links */
+    cursor: pointer;
+}
+h1,h2,h3,h4,h5,h6,p {
+    color: var(--purple);
 }
 .disabled { /* to disable any link anytime */
     pointer-events: none;
     color: var(--purple);
 }
-.btn-black {
+.btn-purple {
     background-color: transparent;
-    border: 2px solid black;
+    border: 2px solid var(--purple);
+    color: var(--purple);
     border-radius: 50px;
     font-size: 16px;
     font-weight: bold;
@@ -22,8 +26,9 @@ a {
     padding: 14px 24px;
     transition: all 0.3s;
 }
-.btn-black:hover {
-    background-color: black;
-    color: var(--blue);
+.btn-purple:hover {
+    background-color: var(--purple);
+    color: var(--yellow);
     cursor: pointer;
+    width: fit-content;
 }
