@@ -1,12 +1,12 @@
 .footer {
     display: flex;
     flex-direction: column;
-    background-color: var(--purple);
+    background-color: var(--lilac);
     align-items: center;
 }
 h1 {
     font-size: 20px;
-    color: var(--lilac);
+    color: var(--purple);
     margin: 0;
     padding-top: 26;
 }

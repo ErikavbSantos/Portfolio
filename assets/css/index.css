@@ -1,4 +1,9 @@
 /* DIV SOBRE MIM ---------------------------------- */
+.card-sobre-mim {
+    display: flex;
+    justify-content: center;
+    background-color: var(--lilac);
+}
 #sobre-mim {
     background-color: var(--lilac);
     color: black;
@@ -7,7 +12,9 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-    padding: 140px 60px 70px 60px;
+    padding-top: 140px;
+    padding-bottom: 110px;
+    width: 1020px;
 }
 .logo {
     position: relative;
@@ -67,10 +74,14 @@
     margin: 0;
     padding-bottom: 20px;
 }
-.habilities-icons svg {
+.habilities-icons img {
     height: 40px;
     width: auto;
     padding-right: 16px;
+    transition: ease-in-out 0.2s;
+}
+.habilities-icons img:hover {
+    transform: scale(1.2);
 }
 /* DIV PROJETOS ---------------------------------- */
 #projetos {
@@ -106,14 +117,15 @@
     font-weight: 600;
     font-size: 18px;
     margin: 6px;
+    transition: ease-in-out 0.2s;
 }
 .cards img {
     width: auto;
     height: 200;
 }
-.purple-border {
-    box-shadow: var(--purple) -2px 2px 0px 5px;
-    color: var(--purple);
+.lilac-border {
+    box-shadow: var(--lilac) -2px 2px 0px 5px;
+    color: var(--lilac);
 }
 .pink-border {
     box-shadow: var(--pink) -3px 3px 0px 6px;
@@ -128,7 +140,7 @@
     color: var(--blue);
 }
 .purple-underline {
-    border-bottom: 1px solid var(--purple);
+    border-bottom: 1px solid var(--lilac);
 }
 .pink-underline {
     border-bottom: 1px solid var(--pink);
@@ -182,69 +194,3 @@
     font-size: 20px;
     color: var(--blue);
 }
-
-
-
-section{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding-top: 100;
-    padding-right: 60px;
-    width: 500px;
-}
-section form{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-form label{
-    font-size: 17px;
-    margin-bottom: 4px;
-}
-form input{
-    padding: 15px;
-    outline: none;
-    border: 0;
-    margin-bottom: 20px;
-    font-size: 15px;
-    background-color: rgba(217, 217, 217, 0.2);
-    border-bottom: 2px solid black;
-    transition: ease-in-out 0.2s;
-}
-form input:focus{
-    border-color: var(--blue);
-}
-form textarea{
-    padding: 10px;
-    outline: none;
-    resize: none;
-    border: 0;
-    font-family: Roboto, sans-serif;
-    font-size: 15px;
-    margin-bottom: 30px;
-    background-color: rgba(217, 217, 217, 0.2);
-    border-bottom: 2px solid black;
-    transition: ease-in-out 0.2s;
-}
-form textarea:focus{
-    border-color: var(--blue);
-}
-form button{
-    padding: 15px;
-    cursor: pointer;
-    font-size: 16px;
-    align-self: center;
-    background: transparent;
-    border: 2px solid black;
-    transition: all 1s;
-}
-
-
-
-@keyframes rotate-hue634 {
-    to {
-      filter: hue-rotate(1turn);
-    }
-  }

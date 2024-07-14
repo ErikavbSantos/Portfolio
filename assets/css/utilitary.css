@@ -6,11 +6,9 @@
     --yellow: #FECF67;
     --background: #1E1E1E;
 }
-
 :root {
     scroll-behavior: smooth;
   }
-
 ::selection {
     background-color: var(--yellow);
 }

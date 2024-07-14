@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Roboto, sans-serif;
+    font-family: Inter, sans-serif;
     font-weight: normal;
 }
 a {
@@ -10,6 +10,28 @@ a {
 }
 h1,h2,h3,h4,h5,h6,p {
     color: var(--purple);
+}
+.purple-t {
+    color: var(--purple)
+}
+.purple-t:hover {
+    color: var(--yellow)
+}
+.pink-t {
+    color: var(--pink)
+}
+.pink-t:hover {
+    color: var(--purple)
+}
+.yellow-t {
+    color: var(--yellow)
+}
+.yellow-t:hover {
+    color: var(--pink)
+}
+.disabled {
+    color: rgb(82, 82, 82);
+    pointer-events: none;
 }
 .disabled { /* to disable any link anytime */
     pointer-events: none;
@@ -29,6 +51,40 @@ h1,h2,h3,h4,h5,h6,p {
 .btn-purple:hover {
     background-color: var(--purple);
     color: var(--yellow);
+    cursor: pointer;
+    width: fit-content;
+}
+.btn-pink {
+    background-color: transparent;
+    border: 2px solid var(--pink);
+    color: var(--pink);
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    height: fit-content;
+    padding: 14px 24px;
+    transition: all 0.3s;
+}
+.btn-pink:hover {
+    background-color: var(--pink);
+    color: var(--yellow);
+    cursor: pointer;
+    width: fit-content;
+}
+.btn-yellow {
+    background-color: transparent;
+    border: 2px solid var(--yellow);
+    color: var(--yellow);
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    height: fit-content;
+    padding: 14px 24px;
+    transition: all 0.3s;
+}
+.btn-yellow:hover {
+    background-color: var(--yellow);
+    color: var(--pink);
     cursor: pointer;
     width: fit-content;
 }
